@@ -11,7 +11,7 @@ const config = {
       fallback: 'index.html'
     }),
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/sveltekit-github-pages' : '',
+      base: process.env.NODE_ENV === 'production' ? '/JuanTarrat' : '',
     },
     //target: '#svelte'
   },
