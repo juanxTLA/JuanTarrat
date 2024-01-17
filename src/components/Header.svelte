@@ -1,6 +1,6 @@
 <script>
     export let y;
-
+    //import { base } from '$app/paths';
     export let tabs = [
         { name: "Projects ", link: "#projects" },
         { name: "About me", link: "#about" },

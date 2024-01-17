@@ -11,8 +11,7 @@ const config = {
       fallback: 'index.html'
     }),
     paths: {
-      base: process.env.BASE_URL || '', // use BASE_URL environment variable, or '' for local development
-      assets: process.env.BASE_URL || '' // use BASE_URL environment variable, or '' for local development
+      base: process.env.NODE_ENV === 'production' ? '/sveltekit-github-pages' : '',
     },
     //target: '#svelte'
   },
