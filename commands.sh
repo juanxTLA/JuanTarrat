@@ -1,7 +1,6 @@
 npm install
 
-set "BASE_URL=/JuanTarrat"
-npm run build
+BASE_URL=/JuanTarrat npm run build
 
 git add .
 git commit -m "Commit changes before switching branches"
