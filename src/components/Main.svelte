@@ -23,6 +23,22 @@
             "Implementation of a <strong class='text-violet-400'>CUDA</strong> version of the Continuous Galerkin Method for solving 1D boundary problems. The project compared a <strong class='text-violet-400'>C++</strong> implementation of the method with a <strong class='text-violet-400'>CUDA</strong> implementation. Demonstrated an reduction in execution time of 300x for the maximum number of elements tested (11,000). The project was developed as part of the General Purpose GPU Computing course at the University of Alabama in Huntsville.",
             href:"https://github.com/juanxTLA/Gen-Purpose-GPU-Programming/tree/main/FiniteElementMethod"
         },
+
+        {
+            name: "Memory Controller for FPGA",
+            icon: "fa-solid fa-microchip",
+            description:
+            "Implementation of a memory controller for the ISSI 512Mb SDRAM chip contained on the <strong class='text-violet-400'>DE10-Lite FPGA Evaluation board</strong>. The memory controller is capable of completing single word read and single word write at arbitrary locations in memory. The controller is connected to an SDRAM model in simulation to verify that communications between the memory chip and the memory controller follow the specification provided in the device data sheet. Developed as part of the <strong class='text-violet-400'> VLSI design</strong> course at the University of Alabama in Huntsville.",
+            href:"https://github.com/arspauld/mem-control"
+        },
+
+        {
+            name: "Game AI",
+            icon: "fa-solid fa-gamepad",
+            description:
+            "Implementation of several game AI concepts in <strong class='text-violet-400'>C++</strong> including <strong class='text-violet-400'>Dynamic Movement, Path Following, Path Finding and State machines</strong>. Developed as part of the Game AI course at the University of Alabama in Huntsville.",
+            href:"https://github.com/juanxTLA/Game-AI"
+        },
     ];
 
     let benefits = [
@@ -42,6 +58,11 @@
             description:
                 "I am a proficient time manager, combining organizational skills with strategic planning and adaptability. Prioritizing tasks and maintaining a disciplined approach, I ensure efficiency and productivity. My ability to navigate deadlines and commitments reflects a consistent focus on effective task completion and goal attainment.",
         },
+        {
+            name: "completely bilingual",
+            description:
+                "I fluently speak both <strong class='text-violet-400'>English</strong> and <strong class='text-violet-400'>Spanish</strong>, allowing me to communicate effectively with a diverse range of individuals. I am a good listener, leveraging my communication skills to understand others and collaborate effectively.",
+        },
     ];
 </script>
 
@@ -59,7 +80,7 @@
                 <span class="poppins text-violet-400">Engineering</span>
             </h2>
             <p class="text-base sm:text-lg md:text-xl">
-                My <span class="text-violet-400"> favorite tech</span> includes C, C++, Python, Embedded Systems, Verilog, Machine Learning
+                My <span class="text-violet-400"> favorite tech</span> includes C, C++, Python, Embedded Systems, Verilog, Machine Learning, SQL
             </p>
             <a href="https://www.linkedin.com/in/juan-tarrat-a9b29119a/" target="_blank">
                 <button
@@ -121,6 +142,20 @@
                     {@html steps[2].description}
                 </p>
             </Step>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10">
+            <Step step={steps[3]}>
+                <p>
+                    {@html steps[3].description}
+                </p>
+            </Step>
+            <Step step={steps[4]}>
+                <p>
+                    {@html steps[4].description}
+                </p>
+            </Step>
+        </div>
 
     </section>
     <section
@@ -168,7 +203,7 @@
                         <h3 class="text-2xl sm:text-3xl md:text-5xl">
                             {benefit.name}
                         </h3>
-                        <p>{benefit.description}</p>
+                        <p>{@html benefit.description}</p>
                     </div>
                 </div>
             {/each}
