@@ -59,7 +59,7 @@
                 "I am a proficient time manager, combining organizational skills with strategic planning and adaptability. Prioritizing tasks and maintaining a disciplined approach, I ensure efficiency and productivity. My ability to navigate deadlines and commitments reflects a consistent focus on effective task completion and goal attainment.",
         },
         {
-            name: "completely bilingual",
+            name: "bilingual",
             description:
                 "I fluently speak both <strong class='text-violet-400'>English</strong> and <strong class='text-violet-400'>Spanish</strong>, allowing me to communicate effectively with a diverse range of individuals. I am a good listener, leveraging my communication skills to understand others and collaborate effectively.",
         },
